@@ -1,5 +1,5 @@
 var=0
-zenity --title "The API team loves u" --height=100 --width=800 --warning --text="<span color=\"red\"><span size=\"80000\">Pense à lock ta session</span></span>"
+zenity --title "The Tutors team loves u" --height=100 --width=800 --warning --text="<span color=\"red\"><span size=\"80000\">Pense à lock ta session</span></span>"
 zenity --title "Pourquoi ?" --height=100 --width=300 --question --text="Imagines en entreprise:
 tu as des documents confidentiels sur ta session...
 tu oublies de lock ta session et quelqu'un passe et vole les documents...
@@ -36,5 +36,5 @@ tu oublies de lock ta session et quelqu'un passe et vole les documents...
 Tu penses que ton patron sera content ?"
 	fi
 done
-zenity --title "The API team loves u" --height=100 --width=300 --info --text="Allez retourne a tes projets !"
+zenity --title "The Tutors team loves u" --height=100 --width=300 --info --text="Allez retourne a tes projets !"
 curl -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash
