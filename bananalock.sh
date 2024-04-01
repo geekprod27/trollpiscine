@@ -1,4 +1,6 @@
 #!/bin/sh
+X="$(xdpyinfo | grep dimensions | sed 's/x/ /g' | awk '{print $2}')"                                                              
+Y="$(xdpyinfo | grep dimensions | sed 's/x/ /g' | awk '{print $3}')"     
 clean()
 {
     cd /tmp
@@ -17,4 +19,4 @@ head -n -1 ~/.zsh_history > $work_folder/.zsh_history2
 cp $work_folder/.zsh_history2 ~/.zsh_history
 direct_link=$(curl -L https://www.mediafire.com/file/bnzuzinbfefny1t/bananalock.mp4/file  | grep "download.*bananalock.mp4" | sed 's/.*href="\([^ ]*\)".*/\1/')
 curl -L $direct_link -o bananalock.mp4
-# lance ici le pimp my lock
+/sgoinfre/goinfre/Perso/jmaia/Public/pimp_my_lock_v2/pimp_my_lock  $work_folder/bananalock.mp4 0 0 $X $Y
