@@ -19,4 +19,4 @@ head -n -1 ~/.zsh_history > $work_folder/.zsh_history2
 cp $work_folder/.zsh_history2 ~/.zsh_history
 git clone git@github.com:geekprod27/mouseeater.git
 cd mouseeater
-cargo run
+cargo run -- $X $Y
